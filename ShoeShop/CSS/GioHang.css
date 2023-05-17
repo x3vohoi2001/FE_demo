@@ -1,0 +1,304 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+header{
+    width: 100%;
+    margin: auto;
+    /* position: fixed; */
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+    z-index: 99;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    background-color: rgba(209, 236, 227, .8);
+}
+.logo{
+    margin-left: 200px;
+    margin-top: 40px;
+    margin-right: 30px;
+    transform: translateY(-50%);
+    white-space: nowrap;
+}
+#check{
+    display: none;
+}
+a{
+    text-decoration: none;
+}
+.control_menu{
+    margin-right: 200px;
+    list-style: none;   
+}
+label #btn,label #close{
+    color: aliceblue;
+    font-size: 2 0px;
+    cursor: pointer;
+    display: none;
+    padding: 15px;
+    border-radius: 50%;
+    background-color: #0e3328;
+    opacity: .3;
+    display: none;
+}
+
+.menu li{
+    line-height: 80px;
+    display: inline-block;
+    list-style: none;
+}
+.menu li a{
+    font-weight: lighter;
+    font-size: 20px;
+    font-weight: bold;
+    color: #2f9b7a;
+    padding: 0 20px;
+    letter-spacing: 2px;
+}
+
+.menu a:hover{
+    color: #62d8b4;
+    font-size: 24px;
+    transition: .2s;
+}
+
+@media (max-width: 1320px){
+    label #btn{
+        display: block;
+    }
+    label #btn:hover,label #close:hover{
+        opacity: 1;
+        background-color: #2ed8a5;
+    }
+    .form_menu{
+        position: fixed;
+        width: 50%;
+        height: 100vh;
+        right: -50%;
+        top: 80px;
+        background-image:linear-gradient(180deg, rgb(159, 209, 209, .2),rgb(159, 209, 209, .6));
+        text-align: center;
+        transition: 0.5s;
+        z-index: 99;
+    }
+    .menu{
+        margin-top: 170px;
+    }
+    .menu li{
+        display: block;
+        line-height: 20px;
+        margin: 60px 0;
+    }
+    #check:checked ~ .form_menu {
+        right: 0;
+    }
+    #check:checked + label #btn{
+        display: none;
+    }
+    #check:checked + label #close{
+        display: block;
+    }   
+}
+main{
+    max-width: 1600px;
+    margin: auto;
+}
+
+
+
+
+footer{
+    max-width: 1170px;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    min-height: 250px;
+    padding-top: 50px;
+    border-top: 2px solid #cce9e0;
+    border-bottom: 2px solid #cce9e0;
+    box-sizing: border-box; 
+}
+footer .mxh_footer li{
+    display: inline-block;
+    margin:5px 40px 2px 0;
+    list-style: none;
+    font-size: 18px;
+}
+footer a{
+    color: black;
+    line-height: 25px;
+}
+footer ul{
+    list-style: none;
+}
+footer a:hover{
+    color: #58b99e;
+    letter-spacing: 2px;
+    font-size: 20px;
+    transition: font-size 1s;
+}
+.lienlac form{
+    margin: 30px 0 20px 0;
+    display: inline-block;
+    line-height: 25px;
+}
+.lienlac input{
+    width: 300px;
+    height: 50px;
+    text-indent: 30px;
+    outline: none;
+    box-sizing: border-box;
+    color: #6d8b85;
+}
+.lienlac button{
+    width: 145px;
+    height: 50px;
+    border: none;
+    background-color: #90f3d7;
+    font-weight: bold;
+}
+.lienlac button:hover{
+    background-color: #3db996;
+    border: 3px solid #50c4a1;
+    box-sizing: border-box;
+    transition: background 1.5s;
+    color: #faf9f9;
+}
+.type_pro{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    background-image: linear-gradient(90deg, #ffffff, #a2d4c5, #ffffff);
+}
+.type_pro input{
+    height: 35px;
+    width: 300px;
+    text-indent: 30px;
+    font-size: 15px;
+    outline: unset;
+    box-sizing: border-box;
+}
+.type_pro button{
+    height: 35px;
+    width: 35px;
+    box-sizing: border-box;
+}
+.type_pro div{
+    display: flex;
+    align-items: center;
+}
+.type_pro div h3{
+    color: #1c9677;
+    border-left: 3px solid #1c9677;
+    margin-left: 10px;
+    padding-left: 10px;
+    line-height: 35px;
+}
+
+.table {
+    border-collapse: collapse;
+    width: 100%;
+    height: 100vh;
+  }
+  .table th {
+    background-image: linear-gradient(90deg, #ffffff, rgba(198, 230, 148, 0.8), #ffffff);
+    border-bottom: 1px solid rgb(26, 82, 59);
+    font-size: 20px;
+}
+  .table th:first-child, .table td:first-child{
+    width: 700px;
+    text-align: left;
+    text-indent: 90px;
+    background-image: linear-gradient(90deg, rgba(198, 230, 148, 0.8), #ffffff);
+  }
+
+  .table th, .table td {
+    padding: 8px;
+    text-align: center;
+    line-height: 40px;
+  }
+  .table td{
+    line-height: 90px;
+    border-bottom: 1px solid rgba(67, 224, 53, 0.377);
+    align-items: center;
+  }
+.thanhtoan{
+    position: sticky;
+    bottom: 0;
+    background-color: white;
+    border-top: 2px solid rgb(212, 216, 203);
+    box-shadow: 0px -3px 5px 0 rgba(58, 27, 27, 0.2);
+    background-color: #faf9f9;
+}
+.voicher{
+    display: flex;
+    border-bottom: 1px dashed black;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 10px 10px;
+}
+.voicher p{
+    margin: auto;
+    color: rgb(226, 53, 53);
+}
+.muahang{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5px;
+}
+.dieuhuong, .tinhtien{
+    display: flex;
+    font-size: 20px;
+    color: rgb(201, 64, 64);
+    align-items: center;
+}
+.dieuhuong button{
+    margin-left: 60px;
+    font-size: 20px;
+    border: none;
+    background-color: white;
+    color: rgb(201, 64, 64);
+}
+.dieuhuong label{
+    margin-left: 10px;
+}
+.tinhtien button{
+    background-color: rgb(204, 94, 94);
+    border: none;
+    color: white;
+    border-radius: 10px;
+    padding: 10px 40px;
+    font-size: 20px;
+    margin: 0 40px;
+    box-sizing: border-box;
+}
+.tinhtien button:hover, .tinhtien button:focus{
+    background-color: rgb(202, 55, 55);
+    border: 2px solid white;
+    outline: 3px solid rgb(202, 55, 55);
+}
+.sanpham{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0 40px;
+    min-height: 100px;
+}
+.pro_mua{
+    display: flex;
+    align-items: center;
+}
+.pro_mua img{
+    size: 100%;
+}

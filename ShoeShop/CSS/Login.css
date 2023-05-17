@@ -1,0 +1,140 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+    background-image: linear-gradient(75deg, rgb(231, 231, 185), rgb(189, 219, 189), rgb(173, 204, 209) );
+}
+.container{
+    max-width: 1200px;
+    margin: 20vh auto;
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    min-width: 750px;
+    position: relative;
+}
+.left ,.right, .run{
+    width: 50%;
+    display: flex;
+    background-color: #90f3d7;
+    align-items: center;
+    height: 60vh;
+    padding: 0 100px;
+    box-sizing: border-box;
+}
+.run{
+    position: absolute;
+    right: 50%;
+    z-index: 90;
+    text-align: center;
+    background-color: rgb(92, 222, 231);
+    transition: right .5s;
+}
+.fordangnhap, .fordangky{
+    position: absolute;
+}
+.run.dangky{
+    z-index: 98;
+}
+.run.dangnhap{
+    opacity: 0;
+    z-index: 97;
+}
+#next:checked ~ .run{
+    right: 0;
+    transition: right .5s;
+}
+#next:checked ~ .run.dangnhap{
+    opacity: 1;
+    z-index: 98;
+}
+#next:checked ~ .run.dangky{
+    opacity: 0;
+    z-index: 97;
+}
+.check_next{
+    cursor: pointer;
+    display: inline-block;
+    background-color: rgba(218, 228, 236, .8);
+    line-height: 50px;
+    padding: 0 40px;
+    border-radius: 10px;
+    border: 2px solid white;
+    box-sizing: border-box;
+}
+.check_next:hover{
+    background-color: rgb(140, 185, 119);
+    border: 2px solid rgb(168, 161, 151);
+    color: rgb(254, 255, 255);
+    transition: background .5s, color .5s;
+}
+#next{
+    display: none;
+}
+
+.login_form{
+    display: inline-block;
+    text-align: center;
+    box-sizing: border-box;
+}
+#info_khach{
+    width: 100%;
+    margin-bottom: 20px;
+    line-height: 40px;
+    text-indent: 20px;
+    font-size: 1rem;
+    border-radius: 10px;
+    border: white;
+}
+.check{
+    display: flex;
+    justify-content: space-between;
+}
+.check_box{
+    width: 100%;
+    margin-top: 30px;
+    line-height: 40px;
+    border-radius: 10px;
+    border: 2px solid rgb(170, 197, 175);
+    background-color: aqua;
+    box-shadow: 4px 4px 0 rgb(217, 241, 232),
+    6px 6px 3px white;
+    transition: transform .2s, box-shadow .2s;
+}
+button:hover, button:focus{
+    border: 2px solid rgb(60, 145, 73);
+    background-color: rgb(161, 247, 150);
+    outline-offset: 3px;
+    box-shadow: 0px 0px 0 rgb(217, 241, 232),
+    2px 2px 1px white,
+    5px 5px 2px blanchedalmond;
+    transform: translate(4px, 4px);
+    transition: transform .2s, box-shadow .2s;
+}
+
+a{
+    text-decoration: none;
+}
+.mangxahoi li{
+    display: inline-block;
+    list-style-type: none;
+    margin: 20px 5px;
+}
+.mangxahoi a{
+    display: inline-block;
+    width: 40px;
+    border-radius: 50%;
+    background-color: beige;
+    line-height: 40px;
+    border: 1px solid rgb(137, 107, 165);
+}
+.mangxahoi a:hover{
+    background-color: rgb(137, 107, 165);
+    transform: translateY(-2px);
+    scale: 1.2;
+    color: aliceblue;
+    border: 1px solid white;
+}

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Giỏ Hàng</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='./CSS/GioHang.css'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="">
+                <img src="./img/logo.png" alt=""/>
+                <img src="./img/logo_name.png" alt=""/>
+            </a>
+        </div>
+        <div class="control_menu">
+            <input type="checkbox" id="check">
+            <label for="check">
+                <i class="fa-solid fa-bars" id="btn"></i>
+                <i class="fa-solid fa-xmark" id="close"></i>
+            </label>
+            <div class="form_menu">
+                <ul class="menu">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Portfolio</a></li>
+                    <li><a href="">Service</a></li>
+                    <li><a href="">Contant</a></li>
+                </ul>
+            </div>
+        </div>  
+    </header>
+    <main>
+        <div class="type_pro">
+            <div>
+                <a href="">
+                    <img src="./img/logo.png" alt=""/>
+                    <img src="./img/logo_name.png" alt=""/>
+                </a>
+                <h3>Giỏ Hàng Của Bạn</h3>
+            </div>
+            <form action="">
+                <input type="text" placeholder="Từ Khóa Tìm Kiếm" name="timkiem">
+                <button type="button"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </form>
+        </div>
+        <table class="table">
+            <thead>
+              <tr>
+                <th>Sản Phẩm</th>
+                <th>Đơn Giá</th>
+                <th>Số Lượng</th>
+                <th>Thao Tác</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td >
+                    <div class="sanpham">
+                        <input type="checkbox" name="chon-sp" ip="mua">
+                        <label for="mua" class="pro_mua">
+                            <img src="./img/product1.png" alt="">
+                            <p>Air FotOne</p>
+                        </label>
+                    </div>
+                </td>
+                <td>Data 2</td>
+                <td>Data 3</td>
+                <td>Data 3</td>
+              </tr>
+              
+              <td >
+                <div class="sanpham">
+                    <input type="checkbox" name="chon-sp" ip="mua">
+                    <label for="mua" class="pro_mua">
+                        <img src="./img/product1.png" alt="">
+                        <p>Air FotOne</p>
+                    </label>
+                </div>
+            </td>
+            <td>Data 2</td>
+            <td>Data 3</td>
+            <td>Data 3</td>
+          </tr><td >
+            <div class="sanpham">
+                <input type="checkbox" name="chon-sp" ip="mua">
+                <label for="mua" class="pro_mua">
+                    <img src="./img/product1.png" alt="">
+                    <p>Air FotOne</p>
+                </label>
+            </div>
+        </td>
+        <td>Data 2</td>
+        <td>Data 3</td>
+        <td>Data 3</td>
+      </tr><td >
+        <div class="sanpham">
+            <input type="checkbox" name="chon-sp" ip="mua">
+            <label for="mua" class="pro_mua">
+                <img src="./img/product1.png" alt="">
+                <p>Air FotOne</p>
+            </label>
+        </div>
+    </td>
+    <td>Data 2</td>
+    <td>Data 3</td>
+    <td>Data 3</td>
+  </tr><td >
+    <div class="sanpham">
+        <input type="checkbox" name="chon-sp" ip="mua">
+        <label for="mua" class="pro_mua">
+            <img src="./img/product1.png" alt="">
+            <p>Air FotOne</p>
+        </label>
+    </div>
+</td>
+<td>Data 2</td>
+<td>Data 3</td>
+<td>Data 3</td>
+</tr>
+            </tbody>
+        </table>
+        <div class="thanhtoan">
+            <div class="voicher">
+                <p><i class="fa-solid fa-ticket"></i> Shoe Voicher</p>
+                <a href="">Chọn hoặc nhập mã</a>
+            </div>
+            <div class="muahang">
+                <div class="dieuhuong">
+                    <input type="checkbox" id="click_all" >
+                    <label for="click_all"> Chọn tất cả</label> 
+                    <button>Lưu vào mục đã thích</button>
+                    <button>Xóa</button>    
+                </div>
+                <div class="tinhtien">
+                    <div>Tổng Tiền Thanh Toán: </div>
+                    <div style="color: black; margin: 0px 20px;">0 Đ</div>
+                    <Button type="button">Mua Hàng</Button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div>
+            <a href="">
+                <img src="./img/logo.png" alt=""/>
+                <img src="./img/logo_name.png" alt=""/>
+            </a>
+        </div>
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">Man</a></li>
+            <li><a href="">Women</a></li>
+            <li><a href="">Popular</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Blog</a></li>
+        </ul>
+        <ul>
+            <li><a href="">Support</a></li>
+            <li><a href="">Advertisement</a></li>
+            <li><a href="">Online Shop</a></li>
+        </ul> 
+        <div class="lienlac">
+            <p style="color: #6d8b85;">Sign up for news and events</p>
+            <form action="">
+                <input type="text" name="email" placeholder="Your email address">
+                <button type="submit">Submit</button>
+            </form>
+            <div class="mxh_footer">
+                <ul>
+                    <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-google"></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-pinterest-p"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
